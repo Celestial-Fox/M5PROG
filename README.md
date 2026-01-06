@@ -16,11 +16,30 @@ title:  M4 Mythe
 classDiagram
 playerMovement : +float movementSpeed
 
+
+
+
 ## Early_Returns
 
 ```
-if(me)
+public bool IsPlayerReadyToAttack(Player player)
 {
-  stupid
+    if (player == null) return;
+    if (!player.IsAlive) return;
+    if (player.AttackCooldown < 0) return;
+    if (player.Target != null) return;
+    if (!player.Target.IsAlive) return;
+    if (Vector3.Distance(player.transform.position, player.Target.transform.position) >= 5f) return;
+    if (player.Mana < 20) return;
+
+    if (!player.WeaponEquipped) return; ||
+
+                                (player.Health > 30 && player.HasBuff("Strength")))
+                            {
+                                //Level7
+                                if (player.IsStunned) return;
+                                if (player.IsSlowed) return;
+                                
+    return true;
 }
 ```
