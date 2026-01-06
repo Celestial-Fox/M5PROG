@@ -15,3 +15,12 @@ title:  M4 Mythe
 
 classDiagram
 playerMovement : +float movementSpeed
+
+## Early_Returns
+
+```
+if(me)
+{
+  stupid
+}
+```
