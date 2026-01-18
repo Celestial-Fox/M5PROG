@@ -8,10 +8,10 @@
 
 Het doel van deze opdracht is om aan het start 100 ballen met een verschillende kluer en positie instantieren en daarna elke seconde een  nieuwe te instantieren.
 
-[Element: html]
-    ![Image title](//M5PROG/readMe_Assets/ballFallin.mp4)
+
+    //M5PROG/readMe_Assets/ballFallin.mp4
+
     Link naar code: https://github.com/Celestial-Fox/M5PROG/blob/main/M5_PROG/Assets/scripts/Lesson_01/Create_Ball.cs
-[Elemnt: /html]
 
 ## M6Prog
 
